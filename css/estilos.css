@@ -25,7 +25,126 @@ body{
     font-family: 'Marcellus', serif;
 }
 
-/*Barra de navegacion*/
+/*Mobile First*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    background-color: var(--negro2);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+}
+
+.logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.logo img{
+    width: 40%;
+    max-width: 180px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(1, 10, 52, 0.838);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.menu hr{
+    width: 90%;
+    background-color: var(--blanco);
+}
+
+.item{
+    padding: 1rem;
+}
+
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+}
+
+nav a:hover{
+  background-color: #0B3860;
+  width: 100%;
+  transition: 2s;
+}
+
+.navbar-button{
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+/* Resolucion Tablet*/
+@media screen and (min-width: 768px){
+    
+}
+
+/**Resolucion Notebooks*/
+@media screen and (min-width: 1024px){
+  nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--negro2);
+    align-items: center;
+  }
+
+  .menu{
+    display: block;
+    background-color: var(--negro2);
+  }
+  
+ .logo img{
+     width: 100%;
+ }
+
+  .logo i{
+    display: none;
+  }
+
+  .menu hr{
+    display: none;
+  }
+  .navbar-button{
+    background-color: var(--azuloscuro);
+  }
+
+  .navbar-button:hover{
+    background-color: transparent;
+  }
+}
+
+/**Resolucion Notebooks*/
+@media screen and (min-width: 1308px){
+
+}
+
+/*Resolucion Notebooks*/
+
+
+/*
+/*Barra de navegacion
 
 nav {
     display: flex;
@@ -63,7 +182,7 @@ nav a{
     height: 3rem;
 }
 
-/*Seccion Features*/
+/*Seccion Features
 
 #features{
     display: flex;
@@ -118,7 +237,7 @@ nav a{
     background-color: rgba(0, 0, 0, 0.59);
 }
 
-/*Texto y imagen en section*/
+/*Texto y imagen en section
 
 #infor{
     display: flex;
@@ -142,3 +261,4 @@ nav a{
     width: 240px;
     height: 230px;
 }
+*/
