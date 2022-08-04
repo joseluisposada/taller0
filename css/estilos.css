@@ -1,35 +1,312 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-:root{
-  --azulclaro: #48D6ED;
-  --azuloscuro: #337AB7;
-  --azulnegro: #303342;
-  --negro: #333333;
-  --negro2: #000;
-  --gris: #B2B3B3;
-  --fondo: #FFFEFC;
-  --verdeazul: #157A8A;
-  --Magenta: #9C2759;
-  --blanco: #fff;
-  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
- 
-*{
-    margin:0;
+
+* {
+    margin: 0;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
-.body{
-    padding: 0rem 0.2rem 0rem 0.2rem;
-}
- 
-  h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Marcellus', serif;
 }
 
-/*Barra de navegacion*/
+/*Mobile*/
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    background-color: var(--negro2);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+}
+
+.logo i {
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.logo img {
+    width: 35%;
+    max-width: 180px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(1, 10, 52, 0.838);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.menu hr {
+    width: 90%;
+    background-color: var(--blanco);
+}
+
+.item {
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    background-color: #0B3860;
+    width: 100%;
+    transition: 2s;
+}
+
+.navbar-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+#img {
+    background-image: url('../img/slide1.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 250px;
+    max-height: 400px;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+}
+
+.letra {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 55%;
+    text-align: left;
+    font-size: 0.9em;
+    padding: 0.5rem 1.5rem 2rem 1.5rem;
+    margin-top: auto;
+    border: 0;
+}
+
+#infor{
+ padding:1.5rem;
+ font-size: 15px;
+}
+
+.textoimg {
+    display: none;
+}
+
+#features{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/bg-features.png);
+    color: var(--blanco);
+}
+
+.feature-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.feature-tittle{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    padding: 1rem;
+}
+
+.feature{
+    width: 20%;
+    min-width: 180px;
+    max-width: 230px;
+    margin: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.feature i{
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+.feature-blue{
+    background-color: #00325eae;
+}
+
+.feature-black{
+    background-color: rgba(0, 0, 0, 0.59);
+}
+
+#mapa{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 2.5rem;
+}
+
+#mapa iframe{
+    border:0;
+    width: 95%;
+    height: 300px;
+    padding: 2rem ;
+}
+
+#direccion h2{  
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 1.2em;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+ }
+ 
+ #direccion hr {
+     width: 86%;
+     margin: 0 7% 0 7%;
+     border-color: var(--azuloscuro);
+     height: 0.1px;
+ }
+
+ /* Resolucion Tablet*/
+ @media screen and (min-width: 768px) {}
+
+ /*Resolución resoluciones medias*/
+ @media screen and (min-width:1024px) {
+     nav {
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+         justify-content: space-between;
+         background-color: var(--negro2);
+         align-items: center;
+     }
+
+     .menu {
+         display: block;
+         background-color: var(--negro2);
+     }
+
+     .logo img {
+         width: 100%;
+     }
+
+     .menu hr {
+         display: none;
+     }
+
+     .navbar-button {
+         background-color: var(--azuloscuro);
+     }
+
+     nav a:hover {
+         background-color: transparent;
+         color: var(--azuloscuro);
+         transition: none;
+     }
+
+     .menu button:hover {
+         background-color: var(--azuloscuro);
+     }
+
+     .logo i {
+         display: none;
+     }
+
+     #img {
+         height: 400px;
+     }
+
+     .letra {
+         font-size: 2em;
+         width: 45%;
+         padding: 0.5rem 1.5rem 3rem 1.5rem;
+     }
+
+     .textoimg {
+         display: block;
+     }
+
+     #infor {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         padding: 4.5rem 6rem;
+     }
+
+     .texto {
+         color: var(--negro2);
+         flex-basis: 70%;
+         font-size: 1.5em;
+     }
+
+     .textoimg {
+         flex-basis: 30%;
+         text-align: center;
+     }
+
+     .textoimg img {
+         width: 240px;
+         height: 230px;
+     }
+
+     #features{
+        padding-top: 1rem;
+     }
+
+     .feature-tittle{
+        font-size: 2em;
+     }
+     #direccion h2{  
+        font-size: 1.6em;
+     }
+     
+     #direccion hr {
+         width: 60%;
+         margin: 0 20% 0 20%;
+     }
+ }
+
+
+/*Barra de navegacion
 
 nav {
     display: flex;
@@ -55,7 +332,7 @@ nav a:hover {
     color: var(--azuloscuro);
 }
 
-.meno button:hover{
+.menu button:hover{
     background-color: transparent;
 }
 
@@ -76,7 +353,7 @@ nav a:hover {
     height: 3.5rem;
 }
 
-/*Imagen*/
+/*Imagen
 
 #img{ 
 background-image: url('../img/slide1.jpg');
@@ -98,7 +375,7 @@ flex-direction: column;
     border: 0;
 }
 
-/*Seccion Features*/
+/*Seccion Features
 
 #features{
     display: flex;
@@ -153,7 +430,7 @@ flex-direction: column;
     background-color: rgba(0, 0, 0, 0.59);
 }
 
-/*Texto y imagen en section*/
+/*Texto y imagen en section
 
 #infor{
     display: flex;
@@ -178,7 +455,7 @@ flex-direction: column;
     height: 230px;
 }
 
-/*Mapa*/
+/*Mapa
 #mapa{
     text-align: center;
     font-size: 2em;
@@ -192,7 +469,7 @@ flex-direction: column;
     padding: 2rem ;
 }
 
-/*Direccion*/
+/*Direccion
 #direccion h2{
    text-align: center;
    font-family: 'Times New Roman';
@@ -206,3 +483,5 @@ flex-direction: column;
     border-color: var(--azuloscuro);
     height: 0.1px;
 }
+
+*/
