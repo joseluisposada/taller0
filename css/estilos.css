@@ -20,6 +20,10 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
+
+.body{
+    padding: 0rem 0.2rem 0rem 0.2rem;
+}
  
   h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
@@ -78,19 +82,20 @@ nav a:hover {
 background-image: url('../img/slide1.jpg');
 background-size: cover;
 background-position: 50% 50%;
-min-height: 400px;
+height: 400px;
 color: var(--blanco);
-padding-top: 1rem;
 display: flex;
 flex-direction: column;
 }
 
 .letra {
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 45%;
+    text-align: left;
     font-size: 2em;
-    padding: 0.5rem;
+    padding: 0.5rem 1.5rem 3rem 1.5rem;
+    margin-top: auto;
+    border: 0;
 }
 
 /*Seccion Features*/
@@ -114,7 +119,7 @@ flex-direction: column;
 
 .feature-tittle{
     background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
+    width: 98.6%;
     text-align: center;
     font-size: 2em;
     padding: 0.5rem;
@@ -154,13 +159,13 @@ flex-direction: column;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5rem 6rem;
+    padding: 4.5rem 6rem;
 }
 
 .texto{
     color: var(--negro2);
     flex-basis: 70%;
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 
 .textoimg{
@@ -171,4 +176,33 @@ flex-direction: column;
 .textoimg img{
     width: 240px;
     height: 230px;
+}
+
+/*Mapa*/
+#mapa{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 2.5rem;
+}
+
+#mapa iframe{
+    border:0;
+    width: 95%;
+    height: 320px;
+    padding: 2rem ;
+}
+
+/*Direccion*/
+#direccion h2{
+   text-align: center;
+   font-family: 'Times New Roman';
+   font-size: 1.5em;
+   padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+#direccion hr{
+    width: 56%; 
+    margin: 0 22% 0 22%;
+    border-color: var(--azuloscuro);
+    height: 0.1px;
 }
