@@ -16,6 +16,7 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -136,13 +137,17 @@ nav a:hover {
     color: var(--blanco);
 }
 
-.feature-description{
+#features p {
+    text-align: center;
+}
+
+.part1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .feature-tittle{
@@ -151,19 +156,22 @@ nav a:hover {
     text-align: center;
     font-size: 1em;
     padding: 1rem;
+    font-family: 'Times New Roman';
 }
 
 .feature{
     width: 20%;
-    min-width: 180px;
-    max-width: 230px;
+    min-width: 150px;
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 250px;
     margin: 0.8rem;
-    padding: 1rem;
+    padding: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .feature i{
@@ -196,7 +204,7 @@ nav a:hover {
     text-align: center;
     font-family: 'Times New Roman';
     font-size: 1.2em;
-    padding: 0.5rem 0rem 0.5rem 0rem;
+    padding: 0.5rem 0rem 2.5rem 0rem;
  }
  
  #direccion hr {
@@ -204,6 +212,33 @@ nav a:hover {
      margin: 0 7% 0 7%;
      border-color: var(--azuloscuro);
      height: 0.1px;
+ }
+
+#usuarios{
+    color: var(--blanco);
+}
+
+#usuario{
+        width: 20%;
+        min-width: 150px;
+        max-width: 300px;
+        min-height: 100px;
+        max-height: 250px;
+        margin: 0.8rem;
+        padding: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+}
+
+ #usuarios h2{
+    background-color: var(--negro);
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1.5rem 1.5rem 5rem 1.5rem;
  }
 
  /* Resolucion Tablet*/
@@ -290,6 +325,10 @@ nav a:hover {
 
      #features{
         padding-top: 1rem;
+     }
+
+     .part1{
+        flex-wrap: nowrap;
      }
 
      .feature-tittle{
