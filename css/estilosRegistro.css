@@ -160,11 +160,11 @@ img{
         position: relative;
         display: flex;
         flex-direction: column;
-        top: 40%;
+        top: 30%;
     }
 
     .heade img{
-        width: 300px;
+        width: 350px;
     }
 
     .te{
@@ -211,6 +211,10 @@ img{
     .form-check{
         margin-top: 7px;
         margin-bottom: 5px;
+    }
+
+    .radio-inline{
+        padding-top: 0.8rem;
     }
 
     .genero{
